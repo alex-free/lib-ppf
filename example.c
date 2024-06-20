@@ -18,7 +18,7 @@ int main (int argc, const char * argv[])
 
     if(bin == NULL)
     {
-        printf("Error: Can not open: %s\n", argv[1]);
+        printf("Error: Can not open: %s\n", argv[2]);
         fclose(bin);
         return 1;
     }
