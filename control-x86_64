@@ -1,0 +1,6 @@
+Package: lib-ppf-example
+Version: 1.0
+Maintainer: Alex Free
+Architecture: amd64
+Homepage: https://alex-free.github.io/lib-ppf
+Description: An example for Lib-PPF.

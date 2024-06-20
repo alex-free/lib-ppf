@@ -1,0 +1,2 @@
+	apply_ppf(kings_field_japan_english_translation_with_save_fix_PPF, kings_field_japan_english_translation_with_save_fix_PPF_len, bin);
+
