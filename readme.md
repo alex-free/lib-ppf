@@ -24,10 +24,13 @@ An example has been included ([example.c](https://github.com/alex-free/lib-ppf/b
 
 ### Convert .PPF To .h:
 
-1) Put .PPF into a directory name `ppf-patches`.
-2) If you name your patch starting with the boot file name (i.e. you have `ppf-patches/SLPS_021.80_REV_0.PPF`) you can run `./genh.sh` to generate the `patches.h` file automatically which includes (in this example) a generated `ppf-c/SLPS_021.80_REV_0_PPF.h` containing both `const unsigned char SLPS_021.80_REV_0_PPF[]` and `unsigned int SLPS_021.80_REV_0_PPF_LEN`. Alternatively if you name the patch without starting with the boot file name use  `./genh-not-boot-file-name.sh` (i.e. you have `ppf-patches/kings_field_japan_english_translation_with_save_fix.PPF`) you can run `./genh.sh` to generate the `patches.h` file automatically which includes (in this example) a generated `ppf-c/kings_field_japan_english_translation_with_save_fix_PPF.h` containing both `const unsigned char kings_field_japan_english_translation_with_save_fix_PPF[]` and `unsigned int kings_field_japan_english_translation_with_save_fix_PPF_LEN`. 
+Put .PPF into a directory name `ppf-patches`.
 
-3) Use the generated `template.txt` as a basis for your main() code. If you used `./genh.sh` you will see how easily you could use my[Lib PS-CD-ID](https://github.com/alex-free/lib-ps-cd-id) into your code as well.
+If you name your patch starting with the boot file name (i.e. you have `ppf-patches/SLPS_021.80_REV_0.PPF`) you can run `./genh.sh` to generate the `patches.h` file automatically which includes (in this example) a generated `ppf-c/SLPS_021.80_REV_0_PPF.h` containing both `const unsigned char SLPS_021.80_REV_0_PPF[]` and `unsigned int SLPS_021.80_REV_0_PPF_LEN`. 
+
+Alternatively if you name the patch without starting with the boot file name use  `./genh-not-boot-file-name.sh` (i.e. you have `ppf-patches/kings_field_japan_english_translation_with_save_fix.PPF`) you can run `./genh.sh` to generate the `patches.h` file automatically which includes (in this example) a generated `ppf-c/kings_field_japan_english_translation_with_save_fix_PPF.h` containing both `const unsigned char kings_field_japan_english_translation_with_save_fix_PPF[]` and `unsigned int kings_field_japan_english_translation_with_save_fix_PPF_LEN`. 
+
+Use the generated `template.txt` as a basis for your `main()` code. If you used `./genh.sh` you will see how easily you could use my[Lib PS-CD-ID](https://github.com/alex-free/lib-ps-cd-id) into your code as well.
 
 ### Use The Functions:
 
@@ -41,7 +44,7 @@ Please see [example.c](https://github.com/alex-free/lib-ppf/blob/master/example.
 
 ### Icarus/Paradox
 
-Massive thanks to Icarus/Paradox for releasing the PPF source under open terms (see [pdx-ppf3](https://github.com/alex-free/lib-ppf/blob/master/) folder in the source for the original Paradox release):
+Massive thanks to Icarus/Paradox for releasing the PPF source under open terms (see [pdx-ppf3](https://github.com/alex-free/lib-ppf/tree/master/pdx-ppf3) folder in the source for the original Paradox release):
 
 ***************************
 
@@ -59,4 +62,4 @@ Feel free to use this source in and for your own programms.
 
 ## License
 
-Lib PPF is released with the 3-BSD license, see the [license](license) for more info.
+Lib PPF is released with the 3-BSD license, see the [license](license.md) for more info.
